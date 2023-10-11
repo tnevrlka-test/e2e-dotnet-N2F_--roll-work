@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-zpbk
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-jlzj-tenant/e2e-dotnet/devfile-sample-dotnet60-basic-zpbk@sha256:6cd23404f2f8868f8bbd2fc21e4abb43107290d38fdbb27f28bdee0b93252a2d
+        name: main
+        resources: {}
+status: {}
